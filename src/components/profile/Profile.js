@@ -1,4 +1,10 @@
-import { List, WrapperCard, Avatar, Description } from './Profile.styled';
+import {
+  List,
+  WrapperCard,
+  Avatar,
+  Description,
+  ListItem,
+} from './Profile.styled';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
@@ -11,18 +17,18 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
       </Description>
 
       <List>
-        <li>
+        <ListItem>
           <span className="label">Followers</span>
           <span className="quantity"> {stats.followers}</span>
-        </li>
-        <li>
+        </ListItem>
+        <ListItem>
           <span className="label">Views</span>
           <span className="quantity"> {stats.views}</span>
-        </li>
-        <li>
+        </ListItem>
+        <ListItem>
           <span className="label">Likes</span>
           <span className="quantity"> {stats.likes}</span>
-        </li>
+        </ListItem>
       </List>
     </WrapperCard>
   );

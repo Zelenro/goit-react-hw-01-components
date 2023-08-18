@@ -11,13 +11,6 @@ export const WrapperCard = styled.div`
   background-color: deepskyblue;
 `;
 
-export const List = styled.ul`
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
 export const Description = styled.div`
   display: flex;
   flex-direction: column;
@@ -29,4 +22,18 @@ export const Avatar = styled.img`
   padding: 16px;
   min-width: 50px;
   max-width: 250px;
+`;
+
+export const List = styled.ul`
+  padding: 16px;
+  display: flex;
+  align-items: center;
+`;
+export const ListItem = styled.li`
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  width: 33%;
 `;
