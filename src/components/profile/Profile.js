@@ -2,9 +2,9 @@ import { List, WrapperCard, Avatar, Description } from './Profile.styled';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
-    <WrapperCard className="profile">
-      <Description className="description">
-        <Avatar src={avatar} alt={username} className="avatar" />
+    <WrapperCard>
+      <Description>
+        <Avatar src={avatar} alt={username} />
         <p className="name">{username}</p>
         <p className="tag">@{tag}</p>
         <p className="location">{location}</p>
