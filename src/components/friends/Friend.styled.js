@@ -1,4 +1,5 @@
 import { styled } from 'styled-components';
+import { TiWiFi } from "react-icons/ti";
 
 export const Friends = styled.ul`
   border: 2px solid black;
@@ -22,6 +23,15 @@ export const ListItem = styled.li`
 `;
 
 export const Status = styled.span`
-  max-width: 30%;
-  background-color: ${props => (props.isOnline === 'true' ? 'green' : 'black')};
+  display: inline-block;
+  width: 30px; 
+  height: 30px; 
+  border-radius: 50%;
+  background-color: ${props => (props.isOnline === true ? 'green' : 'red')};
+`;
+
+export const IconTiWiFi = styled(TiWiFi)`
+  width: 100%; 
+  height: 100%; 
+  color: ${props => (props.isOnline === !true ? 'black' : 'darkblue')};
 `;

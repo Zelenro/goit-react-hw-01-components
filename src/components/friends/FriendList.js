@@ -1,5 +1,4 @@
-import { Friends, ListItem, Status } from './Friend.styled';
-import { FaBeer } from 'react-icons/fa';
+import { Friends, ListItem, Status, IconTiWiFi } from './Friend.styled';
 
 export const FriendList = ({ friends }) => {
   return (
@@ -8,7 +7,7 @@ export const FriendList = ({ friends }) => {
         {friends.map(({ avatar, name, isOnline, id }) => (
           <ListItem key={id}>
             <Status isOnline={isOnline}>
-              <FaBeer />
+              <IconTiWiFi isOnline={isOnline}/>
             </Status>
             <img className="avatar" src={avatar} alt={name} width="48" />
             <p className="name"> {name} </p>
