@@ -12,7 +12,9 @@ export const WrapperSection = styled.section`
 `;
 
 export const Title = styled.h2`
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 16px;
   background-color: deepskyblue;
 `;

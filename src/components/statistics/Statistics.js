@@ -28,8 +28,10 @@ export const Statistics = ({ title="Upload stats", stats }) => {
   );
 };
 
+
 Statistics.propTypes = {
-  friends: PropTypes.arrayOf(
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired, 
       label: PropTypes.string.isRequired,
