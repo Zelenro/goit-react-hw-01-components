@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import {
   Title,
   StatList,
@@ -6,11 +7,11 @@ import {
   generateRandomColor,
 } from './Statistics.styled';
 
-export const Statistics = ({ stats }) => {
+export const Statistics = ({ title="Upload stats", stats }) => {
   return (
     <div>
       <WrapperSection>
-        <Title>Upload stats</Title>
+        <Title>{title}</Title>
         <StatList>
           {stats.map(data => (
             <StatItem
@@ -26,3 +27,11 @@ export const Statistics = ({ stats }) => {
     </div>
   );
 };
+
+Statistics.propTypes = {
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired, 
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    }).isRequired).isRequired}

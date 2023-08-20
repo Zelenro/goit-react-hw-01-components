@@ -27,11 +27,12 @@ export const Status = styled.span`
   width: 30px; 
   height: 30px; 
   border-radius: 50%;
-  background-color: ${props => (props.isOnline === true ? 'green' : 'red')};
+  background-color: ${props => (props.$isOnline ? 'green' : 'red')};
 `;
 
 export const IconTiWiFi = styled(TiWiFi)`
   width: 100%; 
   height: 100%; 
-  color: ${props => (props.isOnline === !true ? 'black' : 'darkblue')};
+  color: ${props => (props.$isOnline === !true ? 'black' : 'darkblue')};
 `;
+
