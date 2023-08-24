@@ -17,5 +17,5 @@ export const Colums = styled.thead`
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   padding: 8px 0;
-  background-color: deepskyblue;
+  background-color: blue;
 `;
